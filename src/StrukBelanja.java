@@ -41,6 +41,16 @@ public class StrukBelanja {
         int totalBelanja = subtotal1 + subtotal2 + subtotal3;
         int kembalian = uangDibayar - totalBelanja;
 
+        System.out.println();
+        System.out.println("===== STRUK BELANJA =====");
+        System.out.println(nama1 + "\t" + jumlah1 + " x " + harga1 + " = " + subtotal1);
+        System.out.println(nama2 + "\t" + jumlah2 + " x " + harga2 + " = " + subtotal2);
+        System.out.println(nama3 + "\t" + jumlah3 + " x " + harga3 + " = " + subtotal3);
+        System.out.println("--------------------------");
+        System.out.println("Total belanja\t\t= " + totalBelanja);
+        System.out.println("Uang dibayar\t\t= " + uangDibayar);
+        System.out.println("Kembalian\t\t= " + kembalian);
+
         input.close();
     }
 }

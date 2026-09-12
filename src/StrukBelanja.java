@@ -31,6 +31,16 @@ public class StrukBelanja {
         System.out.print("Jumlah barang 2: ");
         int jumlah2 = input.nextInt();
 
+        System.out.print("Uang dibayar: ");
+        int uangDibayar = input.nextInt();
+
+        int subtotal1 = harga1 * jumlah1;
+        int subtotal2 = harga2 * jumlah2;
+        int subtotal3 = harga3 * jumlah3;
+
+        int totalBelanja = subtotal1 + subtotal2 + subtotal3;
+        int kembalian = uangDibayar - totalBelanja;
+
         input.close();
     }
 }
